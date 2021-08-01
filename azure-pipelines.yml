@@ -30,7 +30,7 @@ stages:
     - task: Docker@2
       displayName: Push image
       inputs:
-        containerRegistry: 'gcr.io/bunbun1'
+        containerRegistry: 'gcr.io'
         repository: $(imageName)
         command: push
         tags: |
